@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google'
 import { Amplify } from 'aws-amplify';
 import config from '../aws-exports';
 
-// Configure Amplify
-if (config) {
+// Configure Amplify only on the client side to avoid SSR issues
+if (typeof window !== "undefined" && config) {
   Amplify.configure(config);
 }
 
