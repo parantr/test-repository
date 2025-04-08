@@ -1,15 +1,20 @@
+"""Simple hello world program."""
+
 def main():
-        print("Hello World!")  # Intentionally using 8 spaces throughout this function
-        message = "Using 8 spaces consistently"
-        print(message)
+    """Main function that prints hello world."""
+    print("Hello World!")  # Using standard 4 spaces
+    message = "Using standard indentation"
+    print(message)
 
 def another_function():
-  print("Using 2 spaces")  # Intentionally using 2 spaces throughout this function
-  message = "Still using 2 spaces"
-  print(message)
+    """Another function using proper 4-space indentation."""
+    print("Using 4 spaces")
+    message = "Using consistent indentation"
+    print(message)
 
 def third_function():
-    print("Using 4 spaces")  # Using standard 4 spaces here
+    """Third function demonstrating proper indentation."""
+    print("Using 4 spaces")
     message = "This is the proper indentation"
     print(message)
 
