@@ -1,9 +1,12 @@
+"""A simple random quote generator that displays inspirational quotes."""
+
 import random
 
 quotes = [
     "Life is what happens when you're busy making other plans. - John Lennon",
     "The only way to do great work is to love what you do. - Steve Jobs",
-    "Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts. "
+    "- Winston Churchill",
     "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
     "Be yourself; everyone else is already taken. - Oscar Wilde",
     "In the middle of difficulty lies opportunity. - Albert Einstein",
@@ -18,6 +21,7 @@ def get_random_quote():
     return random.choice(quotes)
 
 def main():
+    """Display a random inspirational quote with some basic formatting."""
     print("\nRandom Quote Generator")
     print("-" * 20)
     print(f"\n{get_random_quote()}\n")
